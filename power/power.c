@@ -27,8 +27,7 @@
 
 #define MT_RUSH_BOOST_PATH "/proc/hps/rush_boost_enabled"
 #define MT_FPS_UPPER_BOUND_PATH "/d/ged/hal/fps_upper_bound"
-#define X1 "/sys/devices/mx_tsp/gesture_control"
-#define X2 "/sys/devices/mx_tsp/gesture_data"
+
 
 #define POWER_HINT_POWER_SAVING 0x00000101
 #define POWER_HINT_PERFORMANCE_BOOST 0x00000102

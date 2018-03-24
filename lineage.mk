@@ -30,6 +30,7 @@ PRODUCT_NAME := lineage_porridge
 PRODUCT_BRAND := Wileyfox
 PRODUCT_MANUFACTURER := Wileyfox
 PRODUCT_MODEL := Spark
+PRODUCT_LOCALES := en_US ru_RU uk_UA de_DE be_BY en_GB kk_KZ
 
 
 PRODUCT_GMS_CLIENTID_BASE := android-wileyfox

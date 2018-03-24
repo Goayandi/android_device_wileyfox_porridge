@@ -9,7 +9,7 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="23" />
-    
+
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.READ_SETTINGS" />
@@ -77,7 +77,7 @@
 
     <application
         android:icon="@drawable/icon"
-        android:label="@string/app_name" 
+        android:label="@string/app_name"
     	android:theme="@android:style/Theme.Material">
         <activity
             android:name=".EngineerMode"
@@ -86,7 +86,6 @@
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
                 <category android:name="android.intent.category.ALTERNATIVE" />
                 <category android:name="android.intent.category.SELECTED_ALTERNATIVE" />
             </intent-filter>
@@ -715,7 +714,7 @@
                     android:scheme="android_secret_code" />
             </intent-filter>
         </receiver>
-        
+
         <activity
             android:name=".networkselect.NetworkSelectActivity"
             android:label="Network Selecting"
@@ -730,7 +729,7 @@
         </activity>
         <service android:name=".DailyUseSettingService"/>
         <!-- Merge NFC code to EM -->
-        <activity 
+        <activity
             android:name=".nfc.NfcEntry"
             android:label="@string/NFC_Entry_Text"
 	    android:screenOrientation="portrait">
@@ -740,7 +739,7 @@
             android:label="@string/NFC_Settings_Text"
 	    android:screenOrientation="portrait">
 	</activity>
-	<activity 
+	<activity
             android:name=".nfc.NfcSettingsResult"
             android:label="@string/NFC_Settings_Result_Text"
 	    android:screenOrientation="portrait"
@@ -750,7 +749,7 @@
             android:name=".nfc.NfcRawData"
             android:label="@string/NFC_RawData_Text"
 	    android:screenOrientation="portrait">
-	</activity>		
+	</activity>
         <activity
             android:name=".nfc.NfcSoftwareStack"
             android:label="@string/NFC_SoftwareStack_Text"
@@ -798,39 +797,39 @@
         </activity>
     <service android:name=".nonsleep.EMWakeLockService"/>
 	<activity android:name=".mcdi.McdiSetting"
-			android:label="@string/mcdi_setting_label" 
+			android:label="@string/mcdi_setting_label"
 			android:screenOrientation="portrait">
 	</activity>
 	<activity android:name=".dvfs.CpuDvfs"
-			android:label="@string/cpu_dvfs_label" 
+			android:label="@string/cpu_dvfs_label"
 			android:screenOrientation="portrait">
 	</activity>
 	<activity android:name=".pllcg.PllCgActivity"
-			android:label="@string/pllcg_title" 
+			android:label="@string/pllcg_title"
 			android:screenOrientation="portrait">
 	</activity>
 	<activity android:name=".desense.FreqHoppingSetting6572"
-			android:label="@string/desense_freqhopping" 
+			android:label="@string/desense_freqhopping"
 			android:screenOrientation="portrait">
 	</activity>
 	<activity android:name=".dcm.DcmList"
-			android:label="@string/dcm_label" 
+			android:label="@string/dcm_label"
 			android:screenOrientation="portrait">
 	</activity>
 	<activity android:name=".dcm.ApdcmActivity"
-			android:label="@string/dcm_apdcm" 
+			android:label="@string/dcm_apdcm"
 			android:screenOrientation="portrait">
 	</activity>
 	<activity android:name=".dcm.LpmActivity"
-			android:label="@string/dcm_lpm" 
+			android:label="@string/dcm_lpm"
 			android:screenOrientation="portrait">
 	</activity>
 	<activity android:name=".sleepmode.SleepModeActivity"
-			android:label="@string/sleep_mode_setting" 
+			android:label="@string/sleep_mode_setting"
 			android:screenOrientation="portrait">
 	</activity>
 	<activity android:name=".deepidle.DeepIdleSettingActivity"
-			android:label="@string/deep_idle_setting" 
+			android:label="@string/deep_idle_setting"
 			android:screenOrientation="portrait">
 	</activity>
 
@@ -905,7 +904,7 @@
         android:label="@string/sensor_data"
         android:screenOrientation="portrait">
     </activity>
-    
+
     <activity
         android:name=".sensor.PSensorCollection"
         android:label="@string/psensor_data_collection"
@@ -943,11 +942,11 @@
             android:screenOrientation="portrait" >
         </activity>
 	<activity android:name=".DeviceRegister"
-			android:label="@string/ct_device_register" 
+			android:label="@string/ct_device_register"
 			android:screenOrientation="portrait">
 	</activity>
 	<activity android:name=".EsnTrack"
-			android:label="@string/esn_track_title" 
+			android:label="@string/esn_track_title"
 			android:screenOrientation="portrait">
 	</activity>
     <activity
@@ -996,7 +995,7 @@
             android:configChanges="orientation|keyboardHidden|screenSize" >
         </service>
 	    <activity android:name=".cip.CipPropContentActivity"
-			android:label="@string/cip_prop_content" 
+			android:label="@string/cip_prop_content"
 			android:screenOrientation="portrait">
 	    </activity>
         <activity
@@ -1057,7 +1056,7 @@
             android:name=".wps.WpsNfcTag"
             android:label="@string/wps_write_tag"
             android:screenOrientation="portrait" >
-        </activity>         
+        </activity>
         <!-- wps nfc end -->
         <!-- voice application start -->
         <activity
@@ -1069,7 +1068,7 @@
             android:name=".voicesettings.VoiceWakeup"
             android:label="@string/voice_settings_wakeup"
             android:screenOrientation="portrait" >
-        </activity> 
+        </activity>
         <activity
             android:name=".voicesettings.VoiceCommonSetting"
             android:label="@string/voice_wakeup_recognition"
@@ -1111,7 +1110,7 @@
             android:process="com.android.phone"
             android:label="@string/ATCI_title"
             android:screenOrientation="portrait" >
-       </activity>            
+       </activity>
        <!-- PTP Start -->
        <activity
             android:name=".ptp.PtpList"
@@ -1192,7 +1191,7 @@
         <activity
             android:name=".moms.MoMs"
             android:label="moms"
-            android:screenOrientation="portrait" />            
+            android:screenOrientation="portrait" />
         <activity
             android:name=".modemfilter.ModemFilterActivity"
             android:label="@string/md_em_filter"
