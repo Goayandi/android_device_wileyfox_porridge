@@ -19,7 +19,7 @@ LOCAL_PATH := device/wileyfox/porridge
 DEVICE_PACKAGE_OVERLAYS += device/wileyfox/porridge/overlay
 
 # AAPT configs
-PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Bootanimation
@@ -38,6 +38,10 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.mount.fs=EXT4 \
     persist.sys.display.clearMotion=0
 
+# IO Scheduler
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.io.scheduler=bfq
+
 # build.prop
 PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.legacyencoder=true \
@@ -55,8 +59,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # VM memory overrides
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=8m \
-    dalvik.vm.heapgrowthlimit=288m \
-    dalvik.vm.heapsize=768m \
+    dalvik.vm.heapgrowthlimit=128m \
+    dalvik.vm.heapsize=174m \
     dalvik.vm.heaptargetutilization=0.75 \
     dalvik.vm.heapminfree=512k \
     dalvik.vm.heapmaxfree=8m \
@@ -70,7 +74,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.text_small_cache_width=1024 \
     ro.hwui.text_small_cache_height=1024 \
     ro.hwui.text_large_cache_width=2048 \
-    ro.hwui.text_large_cache_height=1024
+    ro.hwui.text_large_cache_height=1024 \
+    ro.media.maxmem=1073741824 \
+
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 

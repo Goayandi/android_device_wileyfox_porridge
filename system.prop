@@ -37,7 +37,7 @@ touch.pressure.scale=0.003
 ro.config.hw_fast_dormancy=1
 ro.config.hw_power_saving=1
 
-# Telephony
+# RIL
 rild.libpath=/system/lib64/mtk-ril.so
 rild.libargs=-d /dev/ttyC0
 ril.specific.sm_cause=0
@@ -53,10 +53,10 @@ ro.telephony.ril_class=MT6735
 ro.telephony.ril.config=fakeiccid
 ro.telephony.sim.count=2
 ril.current.share_modem=2
-persist.radio.fd.counter=150
-persist.radio.fd.off.counter=50
-persist.radio.fd.r8.counter=150
-persist.radio.fd.off.r8.counter=50
+persist.radio.fd.counter=15
+persist.radio.fd.off.counter=5
+persist.radio.fd.r8.counter=15
+persist.radio.fd.off.r8.counter=5
 
 ro.mtk_bt_support=1
 ro.mtk_cam_lomo_support=1
@@ -145,3 +145,8 @@ net.eth0.dns1=8.8.8.8
 net.eth0.dns2=8.8.4.4
 net.gprs.dns1=8.8.8.8
 net.gprs.dns2=8.8.4.4
+
+# use 3 threads max for dex2oat
+ro.sys.fw.dex2oat_thread_count=3
+
+ro.config.max_starting_bg=3
