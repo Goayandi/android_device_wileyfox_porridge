@@ -200,8 +200,8 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_
 BOARD_SEPOLICY_DIRS := \
        device/wileyfox/porridge/sepolicy
 
-# Use old sepolicy version
-POLICYVERS := 29
+# Use new sepolicy version
+POLICYVERS := 30
 
 # Seccomp filter
 BOARD_SECCOMP_POLICY := device/wileyfox/porridge/seccomp
